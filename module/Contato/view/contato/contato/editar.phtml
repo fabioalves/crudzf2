@@ -1,0 +1,20 @@
+<form method="POST" action="<?php echo $this->url('contato', array('action' => 'atualizar')); ?>">
+    <fieldset>
+        <legend>Editar Contato ID <?php echo $this->id; ?></legend>
+        <input type="hidden" name="id" value="<?php echo $this->id; ?>">
+ 
+        <label><strong>Nome:</strong></label>
+        <input type="text" name="nome" class="input-xlarge" placeholder="Digite o seu nome aqui" value="<?php echo $this->form['nome']; ?>">
+ 
+        <label><strong>Telefone Principal:</strong></label>
+        <input type="text" name="telefone_principal" class="input-xlarge" placeholder="Digite seu telefone principal" value="<?php echo $this->form['telefone_principal']; ?>">
+ 
+        <label>Telefone Secundário(opcional):</label>
+        <input type="text" name="telefone_secundario" class="input-xlarge" placeholder="Digite seu telefone secundário" value="<?php echo $this->form['telefone_secundario']; ?>">
+ 
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Salvar Contato</button>
+            <a href="<?php echo $this->url('contato'); ?>" class="btn">Voltar</a>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,19 @@
+<form method="POST" action="<?php echo $this->url('contato', array('action' => 'adicionar')); ?>">
+    <fieldset>
+        <legend>Novo Contato</legend>
+ 
+        <label><strong>Nome:</strong></label>
+        <input type="text" name="nome" class="input-xlarge" placeholder="Digite o seu nome aqui">
+ 
+        <label><strong>Telefone Principal:</strong></label>
+        <input type="text" name="telefone_principal" class="input-xlarge" placeholder="Digite seu telefone principal">
+ 
+        <label>Telefone Secundário(opcional):</label>
+        <input type="text" name="telefone_secundario" class="input-xlarge" placeholder="Digite seu telefone secundário">
+ 
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Salvar Contato</button>
+            <a href="<?php echo $this->url('contato'); ?>" class="btn">Voltar</a>
+        </div>
+    </fieldset>
+</form>
